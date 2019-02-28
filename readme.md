@@ -1,8 +1,10 @@
 ## 像素鸟
 使用pygame制作完成的像素鸟游戏
-- flappyBird_origin.py
+- flappyBird_origin.py  
+
 ![1.png](screenshoots/1.png)
-- flappyBird.py
+- flappyBird.py  
+
 ![1.png](screenshoots/2.png)
 
 ### hog + svm 小鸟辨识
