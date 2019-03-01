@@ -103,6 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-negative/*
-positive/*
+*.bmp
 00_segment

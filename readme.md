@@ -2,10 +2,11 @@
 使用pygame制作完成的像素鸟游戏
 - flappyBird_origin.py  
 
-![1.png](screenshoots/1.png)
+<img width="180" height="320" src="screenshoots/1.png"/>  
+
 - flappyBird.py  
 
-![1.png](screenshoots/2.png)
+<img width="640" height="320" src="screenshoots/2.png"/>
 
 ### hog + svm 小鸟辨识
 在原版游戏基础上进行，训练数据使用``birdDataGen.py``自动生成。  

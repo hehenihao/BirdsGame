@@ -106,7 +106,7 @@ def birdDataGen(birdType, index):
                     offsety, posx+2+offsetx:posx+size+2+offsetx]
         # ret = cv2.resize(img50, (size, size), interpolation=cv2.INTER_CUBIC)
         x, y, _ = img50.shape
-    cv2.imwrite('positive/'+str(index)+'.bmp', img50)
+    cv2.imwrite('data/positive/'+str(index)+'.bmp', img50)
     # cv2.imshow('output',bg0)
     # cv2.waitKey(0)
 
@@ -135,7 +135,7 @@ def negDataGen(index):
         posy = random.randint(0, bg.shape[0]-size)
         img50 = bg0[posy:posy+size, posx:posx+size]
         x, y, _ = img50.shape
-    cv2.imwrite('negative/'+str(index)+'.bmp', img50)
+    cv2.imwrite('data/negative/'+str(index)+'.bmp', img50)
 
 
 def readAllImg(path, *suffix):
@@ -151,16 +151,16 @@ def readAllImg(path, *suffix):
 def infoTxtPositive(num):
     with open(r'pos.txt', 'w') as writer:
         for i in range(num):
-            writer.write('./positive/{0}.bmp 1 0 0 38 38\n'.format(i))
+            writer.write('./data/positive/{0}.bmp 1 0 0 38 38\n'.format(i))
 
 
 def infoTxtNegative(num):
     with open(r'neg.txt', 'w') as writer:
-        picList = readAllImg('./negative', 'bmp')
+        picList = readAllImg('./data/negative', 'bmp')
         # print(picList)
         for i in picList:
-            tmpimg = cv2.imread('./negative/{0}'.format(i), -1)
-            writer.write('./negative/{0}\n'.format(i,
+            tmpimg = cv2.imread('./data/negative/{0}'.format(i), -1)
+            writer.write('./data/negative/{0}\n'.format(i,
                                                    tmpimg.shape[0], tmpimg.shape[1]))
 
 
