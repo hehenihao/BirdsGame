@@ -15,5 +15,4 @@
 
 数据处理和训练过程查看``svm_bird.ipynb``，使用的是``svm``的线性分类器。
 
-Todos：
-- 实时辨识小鸟
+小鸟辨识移步至[keras_yolov3_bird](https://github.com/hehenihao/keras_yolov3_bird)
